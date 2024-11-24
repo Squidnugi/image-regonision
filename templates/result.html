@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Result</h1>
-    <p>Class: {{ class_name }}</p>
-    <p>Confidence: {{ confidence }}</p>
-    <img src="{{ image_path }}" alt="Uploaded Image" width="300px">
-    <a href="/">Classify Another Image</a>
+    <div class="container">
+        <h1>Result</h1>
+        <p>Class: {{ class_name }}</p>
+        <p>Confidence: {{ confidence }}</p>
+        <img src="{{ image_path }}" alt="Uploaded Image" width="300px">
+        <a href="/">Classify Another Image</a>
+    </div>
 </body>
 </html>
